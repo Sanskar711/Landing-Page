@@ -1,45 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
-</head>
-<body>
-    <section class = "hero-section">
-        <nav class = "navbar">
-            <img src="logo-removebg-preview.png" alt ="JioKing" >
-            <span>JioKing</span>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MusicReverb - Listen to Your Favorite Music NOW!!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
             <ul>
-                <li><a href ="#">Home</a></li>
-                <li><a href ="#">About</a></li>
-                <li><a href ="#">Contact</a></li>
+                <li class = "brand"><img src = "logo.jpg" alt = "MusicReverb" >MusicReverb </li>
+                <li>Home</li>
+                <li>About</li>
             </ul>
         </nav>
-        <div class="hero-text">
-            <h2>The telecome service which changed the india for good</h2>
-            <p> Internet at the cheapest rate is available now!!</p>
-            <a href ="#"><button>Subscribe Now</button> </a>
-            <img src="bg.jpeg">
-        </div>
-        <div class = "rectangle">
-            <div class = "icons">
-                <img  src ="user.jpeg" >
-                <img src="countries.jpeg">
-                <img  src="servers.jpeg" >
+        <div class="container">
+            <div class="songlist" >
+                <h1>Listen Your Favorite Music Here</h1>
+                <div class="songItemcontainer">
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "0"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "1"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "2"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "3"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "4"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "5"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "6"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "7"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "8"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                    <div class="songitem">
+                        <img alt="1">
+                        <span class = "songname">Let Me Love You</span>
+                        <span class="songlistplay"><span class="timestamp"></span> <i id = "9"class="far songitemplay fa-circle-play"></i> </span>
+                    </div>
+                </div>
             </div>
-            <div class="icontext">
-                <div class="text1"><span><h3>1B+</h3>Users</span></div>
-                <div class="text2"><span><h3>60+</h3>Countries</span></div>
-                <div class="text3"><span><h3>100k+</h3>Servers</span></div>
+            <div class="banner"></div>
+        </div>
+        <div class="bottom">
+            <input type="range" name="range" id="myprogressbar" min="0" value="0" max ="100">
+            <div class="icons">
+                <!-- fontawesome icons -->
+                <i class="fa-solid fa-backward-step" id = "previous"></i>
+                <i class="far fa-2x fa-circle-play" id="masterplay"></i>
+                <i class="fa-solid fa-forward-step" id = "next"></i>
+            </div>
+            <div class="songinfo">
+                <img src="playing.gif" height="20px"  width="100px"  alt="" id="gif"> <span id="mastersongname"></span> 
             </div>
         </div>
-    </section>
-</body>
+        <script src="https://kit.fontawesome.com/420e679e61.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        
+    </body>
 </html>
